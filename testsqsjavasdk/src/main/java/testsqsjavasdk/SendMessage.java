@@ -14,7 +14,7 @@ public class SendMessage {
 		SqsClient sqsClient = SqsClient.builder().region(Region.US_EAST_2)
 				.credentialsProvider(ProfileCredentialsProvider.create()).build();
 
-		final String queueUrl = "https://sqs.us-east-2.amazonaws.com/804473135082/SampleQueue";
+		final String queueUrl = "<>";
 
 		final String message = "Testing...";
 

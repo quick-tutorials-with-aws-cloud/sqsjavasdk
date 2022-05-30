@@ -7,20 +7,20 @@ This project creates:
 
 Step 1: Create the SQS Queue using the template in this folder
 
-Step 2: Edit the variables "topicArn" (check SNS console) and "email" (to receive the messages) the class SubscribeEmail
+Step 2: Edit the variables "queueUrl" (check on SQS console) and "message" (the message that you want to send) the class SendMessage
 
-Step 3: Run the class SubscribeEmail and check the email's inbox to confirm the subscription
+Step 3: Run the class SendMessage and check on SQS console to confirm the receiving of the message
 
-Step 4: Edit the variables "topicArn" (created on previous step) and "message" (the message that you want to send) the class Publish
+Step 4: Edit the variables "queueUrl" (check on SQS console) and "messages" (the list of messages that you want to send) the class SendBatchMessage
 
-Step 5: Run the class Publish and check the email's inbox to confirm the receiving of the message
+Step 5: Run the class SendBatchMessage and check on SQS console to confirm the receiving of the messages
 
-Step 6: Edit the variable "subscriptionArn" (on SNS console, check Subscritions tab) of the class Unsubscribe
+Step 6: Edit the variable "queueUrl" (check on SQS console) of the class RetrieveMessages
 
-Step 7: Run the class Unsubscribe to unsubscribe the topic
+Step 7: Run the class RetrieveMessages to receive the messages
 
 ## Helpful links
 
-- [What is Amazon SNS?][1]
+- [What is Amazon Simple Queue Service?][1]
 
-[1]: https://docs.aws.amazon.com/sns/latest/dg/welcome.html
+[1]: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html
